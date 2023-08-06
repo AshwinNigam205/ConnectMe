@@ -1,0 +1,33 @@
+# Dependency directories
+node_modules/
+
+*.txt
+
+# Build output
+build/
+dist/
+*.log
+*.pid
+
+# Environment variables and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+# Build artifacts and caches
+.cache/
+.npm/
+yarn.lock
+package-lock.json
+
+# IDE and editor specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# macOS specific files
+.DS_Store
