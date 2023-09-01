@@ -17,6 +17,7 @@ import {
     const { palette } = useTheme();
     const navigate = useNavigate();
     const token = useSelector((state) => state.token);
+    const currFriends = useSelector((state) => state.user.friends);
     const dark = palette.neutral.dark;
     const medium = palette.neutral.medium;
     const main = palette.neutral.main;
@@ -33,7 +34,7 @@ import {
     //on arriving on page, getUser will be called and this component is rendered
     useEffect(() => {
       getUser();
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    }, [currFriends]); // eslint-disable-line react-hooks/exhaustive-deps
   
     //Can put a loading component here
     if (!user) {
