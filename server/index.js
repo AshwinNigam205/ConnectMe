@@ -88,9 +88,10 @@ mongoose.connect(process.env.MONGO_URL, {
 }).catch((error) => console.log(`${error} did not connect`));
 
 
-///----------------------SOCKET.IO--------------
+//Server Startup
 const server = app.listen(PORT, () => console.log(`Server Port : ${PORT}`));
 
+///----------------------SOCKET.IO--------------
 const io = new Server(server, {
   pingTimeout: 60000,
   cors: {
