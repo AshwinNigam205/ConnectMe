@@ -287,16 +287,6 @@ curl "http://localhost:3001/users/search?username=alex" \\
   -H "Authorization: Bearer <JWT>"
 ```
 
-Recommended captures:
-
-1. `login.png` — login and registration screen.
-2. `feed.png` — feed with a post and the light/dark theme.
-3. `profile.png` — profile and friend list.
-4. `saved-posts.png` — saved-post page with a category selected.
-5. `chat.png` — an active conversation with messages.
-
-See [docs/SCREENSHOTS.md](docs/SCREENSHOTS.md) for capture guidance and the suggested README embedding format.
-
 ## Current limitations and security work
 
 The following items were identified by static inspection of the uploaded source. They should be addressed before presenting the project as production-ready.
