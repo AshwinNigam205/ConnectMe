@@ -264,8 +264,6 @@ The REST API persists messages in MongoDB; Socket.IO provides the live delivery 
 
 ## Screenshots and demo evidence
 
-The uploaded repository did **not** include screenshots of the running application, so this README does not use mock or misleading images. Capture real screens from a locally running instance and place them in `docs/screenshots/`.
-
 As an initial sample output, the current user-search endpoint returns this response shape. Values below are placeholders, not data captured from a live database:
 
 ```json
